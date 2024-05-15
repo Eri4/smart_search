@@ -65,15 +65,32 @@ function generateCombinations(entities: Entities): Combination[] {
         });
     });
 
-    entities.brands.forEach(brand => {
-        combinations.push({ brand });
-    });
-
-    entities.dishTypes.forEach(dishType => {
-        entities.diets.forEach(diet => {
-            combinations.push({ dishType, diet });
+    if(entities.cities.length === 0) {
+        entities.dishTypes.forEach(dishType => {
+            entities.diets.forEach(diet => {
+                combinations.push({ dishType, diet });
+            });
         });
-    });
+    }
+
+    console.log(entities)
+    if(combinations.length === 0) {
+        entities.cities.forEach(city => {
+            combinations.push({ city });
+        });
+
+        entities.dishTypes.forEach(dishType => {
+            combinations.push({ dishType });
+        });
+
+        entities.brands.forEach(brand => {
+            combinations.push({ brand });
+        });
+
+        entities.diets.forEach(diet => {
+            combinations.push({ diet });
+        });
+    }
 
     return combinations;
 }
