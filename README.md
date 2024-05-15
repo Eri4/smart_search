@@ -18,7 +18,7 @@ This is a test project that implements a smart search algorithm that extracts en
 2. Install dependencies:
     - cd server
     - npm install
-    - cd ../frontend
+    - cd ../client
     - npm install
 
 3. Set up the database:
