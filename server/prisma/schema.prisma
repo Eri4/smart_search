@@ -1,0 +1,28 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model City {
+  id   Int    @id @default(autoincrement())
+  name String
+}
+
+model Brand {
+  id   Int    @id @default(autoincrement())
+  name String
+}
+
+model DishType {
+  id   Int    @id @default(autoincrement())
+  name String
+}
+
+model Diet {
+  id   Int    @id @default(autoincrement())
+  name String
+}
