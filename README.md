@@ -26,6 +26,7 @@ This is a test project that implements a smart search algorithm that extracts en
     - Update the DATABASE_URL in the server/.env file with the appropriate database connection URL. Make sure to include the database name, username, and password. (postgresql://USERNAME:PASSWORD@HOST:PORT/DATABASE_NAME).
     - Run the database migration to create the necessary tables: npm run db:migrate.
     - Generate the Prisma Client: npm run postinstall.
+    - You can use this command to add the data from the seed file: npx prisma db seed.
     - You can use Prisma Studio to add the required data to the tables: npm run db:studio.
 
 4. Running the Application:

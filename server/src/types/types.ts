@@ -16,3 +16,10 @@ export interface Combination {
     dishType?: Entity;
     diet?: Entity;
 }
+
+export interface EntityCombination {
+    city?: { id: number; name: string };
+    brand?: { id: number; name: string };
+    dishType?: { id: number; name: string };
+    diet?: { id: number; name: string };
+}
