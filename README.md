@@ -38,3 +38,6 @@ This is a test project that implements a smart search algorithm that extracts en
     Start the frontend:
     - cd client
     - npm run dev
+  
+# Ideas of Improvements
+A way to improve this is adding a functionality that by using a csv or excel that lets us import the search terms (so like the city names and things like that), so we do not have to create tehm manualy.
